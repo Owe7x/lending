@@ -1,0 +1,38 @@
+.fivestep {
+    margin: 135px 0;
+    &__title {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+        text-align: center;
+        color: $primary;
+    }
+    &__p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        text-align: center;
+        color: $primary;
+    }
+    &__blocks {
+        width: 945px;
+        margin: 45px auto;
+        display: flex;
+        flex-direction: column;
+    }
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        &--center {
+            margin: 0 auto 20px;
+        }
+    }
+    &__link {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        color: $primary;
+        text-align: center;
+        line-height: 24px;
+    }
+}

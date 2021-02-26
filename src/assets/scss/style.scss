@@ -1,0 +1,37 @@
+@import "vars";
+@import "vendor/reset";
+@import 'bootstrap/scss/bootstrap';
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $white;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: $white;
+    font-family:'Roboto Regular';
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+/* Blocks */
+@import "blocks/header.scss";
+@import "blocks/form.scss";
+@import "blocks/statistics.scss";
+@import "blocks/sector.scss";
+@import "blocks/value-tender.scss";
+@import "blocks/blocks.scss";
+@import "blocks/franchise.scss";
+@import "blocks/fivestep.scss";
+@import "blocks/footer.scss";
+@import "blocks/calculator.scss";
+@import "blocks/slick.scss";
+@import "blocks/slider.scss";
+@import "blocks/slick-theme.scss";

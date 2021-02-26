@@ -1,0 +1,56 @@
+.franchise {
+    margin-top: 100px;
+    margin-bottom: 120px;
+    color: $primary;
+    &__title {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    &__p {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        font-size: 22px;
+    }
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+    &__block {
+        padding: 10px 20px 20px;
+        background: #E7E7E7;
+        border-radius: 15px;
+        &--link {
+            width: 275px;
+            padding: 27px 0px 24px;
+            border-bottom: 1px solid $white;
+            &:last-child {
+                border-bottom: none;
+            }
+            
+        }
+    }
+}
+.link-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    &--bold {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    &--orange {
+        font-size: 22px;
+        color: #DB8032;
+    }
+}
+.link-number {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: #DB8032;
+    font-size: 30px;
+    text-align: center;
+}

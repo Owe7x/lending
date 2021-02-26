@@ -1,0 +1,139 @@
+
+.header {
+    position: relative;
+    &__inner {
+        padding-top: 50px;
+        margin-bottom: 25px;
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+    }
+    &__main {
+        width: 100%;
+        height: 500px;
+        background: $white;
+        margin-top: 25px;
+        border-radius: 18px;
+        padding: 65px 50px;
+    }
+    
+}
+.header-bg {
+    background: url(/assets/images/bg-main.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    &-phone {
+        font-size: 18px;
+        font-family:'Roboto Black';
+        color: $white;
+        text-decoration: none;
+    }
+    &-application {
+        font-family:'Roboto Regular';
+        text-decoration: underline;
+        color: $white;
+    }
+}
+.logo {
+    display: flex;
+    align-items: center;
+    &-img {
+        padding-right: 35px;
+        position: relative;
+        cursor: pointer;
+        &:after { 
+            position: absolute;
+            top: 50%;
+            right: 0;
+            margin-top: -10px;
+            content: '';
+            display: block;
+            width: 1px;
+            height: 20px;
+            background: $white;
+        }
+    }
+    &-text {
+        padding-left: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        
+    }
+}
+
+.h1-title {
+    margin-top: 25px;
+    font-size: 36px;
+    color: $primary;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    
+}
+.main-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-bottom: 47px;
+    color: $primary;
+}
+.text-orange {
+    font-size: 24px;
+    color: $secondary;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    &--38 {
+        font-size: 38px;
+    }
+    &--50 {
+        font-size: 50px;
+        float: right;
+    }
+}
+.main-icon {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+
+}
+.block-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    width: 130px;
+    &__text {
+        font-size: 14px;
+        color: $primary;
+        font-family: 'Roboto', sans-serif;
+    }
+    &__img {
+        img {
+            width: 50px;
+            margin-bottom: 12px;
+        }
+    }
+    &::after {
+        position: absolute;
+        top: 20px;
+        right: -36px;
+        content: '';
+        display: block;
+        width: 53px;
+        height: 9px;
+        background: url(/assets/images/icon-dots.png);
+    }
+    &:last-child{
+        &::after {
+            display: none;
+        }
+    }
+}

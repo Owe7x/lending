@@ -1,0 +1,36 @@
+.wedding {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .wedding__item {
+    flex-basis: 340px;
+    padding: 20px;
+    overflow: hidden;
+    img {
+        border-radius: 18px!important;
+    }
+  }
+  
+  .dots-style {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  .dots-style button {
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 0;
+    height: 11px;
+    width: 10px;
+    margin: 5px;
+    outline: none;
+  }
+  
+  .dots-style li[class="slick-active"] button {
+    background: #DB8032;
+  }
