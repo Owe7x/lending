@@ -5,7 +5,7 @@
                 <div class="header__top">
                     <div class="logo">
                         <div class="logo-img">
-                            <a href="/"><img src="/assets/images/logo.png" alt=""></a>
+                            <a href="/"><img src="assets/images/logo.png" alt=""></a>
                         </div>
                         <div class="logo-text">
                             5 лет опыта в тендерах
@@ -19,7 +19,7 @@
                 </div>
                 <div class="header__main">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-12 col-xl-6">
                             <h1 class="h1-title">
                                 Франшиза по госзакупкам 
                                 в области строительства
@@ -32,7 +32,7 @@
                             <div class="main-icon">
                                         <div class="block-icon">
                                             <div class="block-icon__img">
-                                                <img src="/assets/images/icon-1.png" alt="">
+                                                <img src="assets/images/icon-1.png" alt="">
                                             </div>
                                             <div class="block-icon__text">
                                                 Окупаемость
@@ -44,7 +44,7 @@
                                         </div>
                                         <div class="block-icon">
                                             <div class="block-icon__img">
-                                                <img src="/assets/images/icon-2.png" alt="">
+                                                <img src="assets/images/icon-2.png" alt="">
                                             </div>
                                             <div class="block-icon__text">
                                                 Свободный график
@@ -56,7 +56,7 @@
                                         </div>
                                         <div class="block-icon">
                                             <div class="block-icon__img">
-                                                <img src="/assets/images/icon-3.png" alt="">
+                                                <img src="assets/images/icon-3.png" alt="">
                                             </div>
                                             <div class="block-icon__text">
                                                 Без ограничений 
@@ -66,34 +66,38 @@
                                         </div>
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-6 col-xl-6">
                             <div class="main-img">
-                                <img src="/assets/images/main-img.jpg" alt="">
+                                <img src="assets/images/main-img.jpg" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="form">
+            <div class="form" >
                 <div class="form__title">
                     Оставьте заявку на презентацию франшизы и бизнес-план
                 </div>
                 <div class="form__form">
-                    <form action="" class="form__block">
-                        <div class="form__block-link">
-                            <label>Ваше имя</label>
-                            <input type="text" required placeholder="Введите имя">
+                    <form id="form1" method="post" action="send.php" class="form__block">
+                        <div class="form__blocks">
+                            <div class="form__block-link">
+                                <label for="fname">Имя</label>
+                                <input type="text" id="fname" name="fname" placeholder="Введите имя"></input>
+                            </div>
+                            <div class="form__block-link">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+ _ (___) ___-____">
+                            </div>
+                            <div class="form__block-link">
+                                <label for="user_email">Почта</label>
+                                <input type="email" id="user_email" name="user_email" placeholder="email@mail.com"></input>
+                            </div>
                         </div>
-                        <div class="form__block-link">
-                            <label>Телефон</label>
-                            <input name="tel" placeholder="+ _ (___) ___-____">
-                        </div>
-                        <div class="form__block-link">
-                            <label>Почта</label>
-                            <input type="email" required placeholder="email@mail.com">
-                        </div>
+                    
+                        <button type="submit" value="Submit" class="form__button" >Получить документацию <img class="button__img" src="/assets/images/icon-pdf.png" alt=""></button>
+
                     </form>
-                    <button type="button" class="form__button" >Получить документацию <img src="/assets/images/icon-pdf.png" alt=""></button>
                 </div>
                 <p class="form__p">Я подтверждаю, что ознакомлен и даю согласие на обработку персональных анных на условиях и для целей, определяемых <a href="" class="form__a">Политикой конфиденциальности</a> </p>
 

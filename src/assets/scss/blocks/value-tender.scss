@@ -1,9 +1,13 @@
 .value-tender {
-    background: url(/assets/images/bg-1-80.jpg);
+    background: url(../images/bg-1-80.jpg);
 
     background-repeat: no-repeat;  
     background-position: center top;
     margin-bottom: 145px;
+    @include breakpoint($bp-992) {
+        background-size: cover;
+        height: auto;
+    }
     &__title {
         padding-top: 60px;
         text-align: center;
@@ -14,6 +18,12 @@
         &--left {
             text-align: left;
             margin-bottom: 55px;
+            @include breakpoint($bp-992) {
+                text-align: center;
+            }
+        }
+        @include breakpoint($bp-576) {
+            font-size: 20px;
         }
     }
     &__p {
@@ -25,6 +35,9 @@
             text-align: left;
             margin-bottom: 25px;
         }
+        @include breakpoint($bp-576) {
+            font-size: 12px;
+        }
     }
     &__form {
         margin-top: 30px;
@@ -33,20 +46,34 @@
         box-shadow: 0px 5px 35px 0px rgba(50, 50, 50, 0.75);
         border-radius: 18px;
         margin-bottom: 20px;
+        @include breakpoint($bp-576) {
+            padding: 15px 15px;
+        }
     }
     &__info {
         width: 400px;
         padding-bottom: 20px;
+        @include breakpoint($bp-992) {
+            margin: 0 auto;
+        }
+        @include breakpoint($bp-576) {
+            width: 100%;
+        }
     }
     &__author {
         padding-top: 60px;
         width: 220px;
         margin: 0 auto;
+        @include breakpoint($bp-992) {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
     }
     &__img {
         width: 220px;
         height: 220px;
-        background: url(/assets/images/bg-author.png);
+        background: url(../images/bg-author.png);
         position: relative;
         margin-bottom: 25px;
         img {
@@ -96,6 +123,12 @@
     font-size: 20px;
     text-align: center;
     padding-bottom: 10px;
+    @include breakpoint($bp-992) {
+        font-size: 18px;
+    }
+    @include breakpoint($bp-576) {
+        font-size: 14px;
+    }
 }
 .block-content {
     width: 50%;
@@ -105,5 +138,11 @@
     font-size: 40px;
     text-align: center;
     padding: 3px 0;
+    @include breakpoint($bp-992) {
+        font-size: 30px;
+    }
+    @include breakpoint($bp-576) {
+        font-size: 20px;
+    }
     
 }

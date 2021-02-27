@@ -7,20 +7,28 @@
         font-size: 40px;
         text-align: center;
         margin-bottom: 5px;
+        @include breakpoint($bp-576) {
+            font-size: 30px;
+        }
     }
     &__p {
         font-family: 'Roboto', sans-serif;
         text-align: center;
         font-size: 22px;
+        @include breakpoint($bp-576) {
+            font-size: 14px;
+        }
     }
     &__blocks {
         display: flex;
         justify-content: space-between;
         margin-top: 35px;
         margin-bottom: 35px;
+        width: 100%;
+        margin: 35px auto;
     }
     &__block {
-        padding: 10px 20px 20px;
+        padding: 10px 40px 20px;
         background: #E7E7E7;
         border-radius: 15px;
         &--link {
@@ -32,6 +40,16 @@
             }
             
         }
+        @include breakpoint($bp-1200) {
+            width: 315px;
+            margin: 0 auto 20px;
+            padding: 10px 20px 20px;
+        }
+        @include breakpoint($bp-576) {
+            width: 300px;
+            padding: 10px 10px 20px;
+        }
+        
     }
 }
 .link-title {

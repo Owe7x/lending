@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.min.css">
     
+    
+    
     <!-- Useful meta tags -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -28,7 +30,7 @@
                         <div class="header__top">
                             <div class="logo">
                                 <div class="logo-img">
-                                    <a href="/"><img src="/assets/images/logo.png" alt=""></a>
+                                    <a href="/"><img src="assets/images/logo.png" alt=""></a>
                                 </div>
                                 <div class="logo-text">
                                     5 лет опыта в тендерах
@@ -42,7 +44,7 @@
                         </div>
                         <div class="header__main">
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-12 col-xl-6">
                                     <h1 class="h1-title">
                                         Франшиза по госзакупкам 
                                         в области строительства
@@ -55,7 +57,7 @@
                                     <div class="main-icon">
                                                 <div class="block-icon">
                                                     <div class="block-icon__img">
-                                                        <img src="/assets/images/icon-1.png" alt="">
+                                                        <img src="assets/images/icon-1.png" alt="">
                                                     </div>
                                                     <div class="block-icon__text">
                                                         Окупаемость
@@ -67,7 +69,7 @@
                                                 </div>
                                                 <div class="block-icon">
                                                     <div class="block-icon__img">
-                                                        <img src="/assets/images/icon-2.png" alt="">
+                                                        <img src="assets/images/icon-2.png" alt="">
                                                     </div>
                                                     <div class="block-icon__text">
                                                         Свободный график
@@ -79,7 +81,7 @@
                                                 </div>
                                                 <div class="block-icon">
                                                     <div class="block-icon__img">
-                                                        <img src="/assets/images/icon-3.png" alt="">
+                                                        <img src="assets/images/icon-3.png" alt="">
                                                     </div>
                                                     <div class="block-icon__text">
                                                         Без ограничений 
@@ -89,34 +91,38 @@
                                                 </div>
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 col-xl-6">
                                     <div class="main-img">
-                                        <img src="/assets/images/main-img.jpg" alt="">
+                                        <img src="assets/images/main-img.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="form">
+                    <div class="form" >
                         <div class="form__title">
                             Оставьте заявку на презентацию франшизы и бизнес-план
                         </div>
                         <div class="form__form">
-                            <form action="" class="form__block">
-                                <div class="form__block-link">
-                                    <label>Ваше имя</label>
-                                    <input type="text" required placeholder="Введите имя">
+                            <form id="form1" method="post" action="send.php" class="form__block">
+                                <div class="form__blocks">
+                                    <div class="form__block-link">
+                                        <label for="fname">Имя</label>
+                                        <input type="text" id="fname" name="fname" placeholder="Введите имя"></input>
+                                    </div>
+                                    <div class="form__block-link">
+                                        <label for="phone">Телефон</label>
+                                        <input type="tel" id="phone" name="phone" placeholder="+ _ (___) ___-____">
+                                    </div>
+                                    <div class="form__block-link">
+                                        <label for="user_email">Почта</label>
+                                        <input type="email" id="user_email" name="user_email" placeholder="email@mail.com"></input>
+                                    </div>
                                 </div>
-                                <div class="form__block-link">
-                                    <label>Телефон</label>
-                                    <input name="tel" placeholder="+ _ (___) ___-____">
-                                </div>
-                                <div class="form__block-link">
-                                    <label>Почта</label>
-                                    <input type="email" required placeholder="email@mail.com">
-                                </div>
+                            
+                                <button type="submit" value="Submit" class="form__button" >Получить документацию <img class="button__img" src="/assets/images/icon-pdf.png" alt=""></button>
+        
                             </form>
-                            <button type="button" class="form__button" >Получить документацию <img src="/assets/images/icon-pdf.png" alt=""></button>
                         </div>
                         <p class="form__p">Я подтверждаю, что ознакомлен и даю согласие на обработку персональных анных на условиях и для целей, определяемых <a href="" class="form__a">Политикой конфиденциальности</a> </p>
         
@@ -131,12 +137,12 @@
                     <div class="statistics__block">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col-6 ">
+                                <div class="col-6 col-md-6">
                                     <div class="statistics__img">
                                         <img src="assets/images/img-1.jpg" alt="">
                                     </div>
                                 </div>
-                                <div class="col-6 ">
+                                <div class="col-12 col-md-6 ">
                                     <div class="statistics__content">
                                         <div class="statistics__title">
                                             В месяц вы будете
@@ -168,7 +174,7 @@
                     <div class="statistics__block statistics__block--right">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col-6 ">
+                                <div class="col-12 col-md-6 ">
                                     <div class="statistics__content">
                                         <div class="statistics__title">
                                             Статистика в нише
@@ -224,7 +230,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6 ">
+                                <div class="col-12 col-md-6 ">
                                     <div class="statistics__img">
                                         <img src="assets/images/img-2.jpg" alt="">
                                     </div>
@@ -241,10 +247,10 @@
                             в абсолютно разных сферах бизнеса
                         </div>
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-xl-3 col-lg-6">
                                 <div class="sector__block">
                                     <div class="sector__img">
-                                        <img src="/assets/images/sector-1.jpg" alt="">
+                                        <img src="assets/images/sector-1.jpg" alt="">
                                     </div>
                                     <div class="sector__text">
                                         Организация
@@ -256,10 +262,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-xl-3 col-lg-6">
                                 <div class="sector__block">
                                     <div class="sector__img">
-                                        <img src="/assets/images/sector-2.jpg" alt="">
+                                        <img src="assets/images/sector-2.jpg" alt="">
                                     </div>
                                     <div class="sector__text">
                                         Digital услуги
@@ -269,10 +275,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-xl-3 col-lg-6">
                                 <div class="sector__block">
                                     <div class="sector__img">
-                                        <img src="/assets/images/sector-3.jpg" alt="">
+                                        <img src="assets/images/sector-3.jpg" alt="">
                                     </div>
                                     <div class="sector__text">
                                         Продукты питания
@@ -284,10 +290,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-xl-3 col-lg-6">
                                 <div class="sector__block">
                                     <div class="sector__img">
-                                        <img src="/assets/images/sector-4.jpg" alt="">
+                                        <img src="assets/images/sector-4.jpg" alt="">
                                     </div>
                                     <div class="sector__text">
                                         Строительство
@@ -297,10 +303,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-xl-3 col-lg-6">
                                 <div class="sector__block">
                                     <div class="sector__img">
-                                        <img src="/assets/images/sector-5.jpg" alt="">
+                                        <img src="assets/images/sector-5.jpg" alt="">
                                     </div>
                                     <div class="sector__text">
                                         Недвижимость
@@ -310,10 +316,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-xl-3 col-lg-6">
                                 <div class="sector__block">
                                     <div class="sector__img">
-                                        <img src="/assets/images/sector-6.jpg" alt="">
+                                        <img src="assets/images/sector-6.jpg" alt="">
                                     </div>
                                     <div class="sector__text">
                                         Медицинские
@@ -325,10 +331,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-xl-3 col-lg-6">
                                 <div class="sector__block">
                                     <div class="sector__img">
-                                        <img src="/assets/images/sector-7.jpg" alt="">
+                                        <img src="assets/images/sector-7.jpg" alt="">
                                     </div>
                                     <div class="sector__text">
                                         Автомобили
@@ -338,10 +344,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-xl-3 col-lg-6">
                                 <div class="sector__block">
                                     <div class="sector__img">
-                                        <img src="/assets/images/sector-8.jpg" alt="">
+                                        <img src="assets/images/sector-8.jpg" alt="">
                                     </div>
                                     <div class="sector__text">
                                         Услуги и продукция для 
@@ -413,21 +419,25 @@
                                 Оставьте заявку на презентацию франшизы и бизнес-план
                             </div>
                             <div class="form__form">
-                                <form action="" class="form__block">
-                                    <div class="form__block-link">
-                                        <label>Ваше имя</label>
-                                        <input type="text" required placeholder="Введите имя">
+                                <form id="form2" method="post" action="send.php" class="form__block">
+                                    <div class="form__blocks">
+                                        <div class="form__block-link">
+                                            <label for="fname">Имя</label>
+                                            <input type="text" id="fname" name="fname" placeholder="Введите имя"></input>
+                                        </div>
+                                        <div class="form__block-link">
+                                            <label for="phone">Телефон</label>
+                                            <input type="tel" id="phone" name="phone" placeholder="+ _ (___) ___-____">
+                                        </div>
+                                        <div class="form__block-link">
+                                            <label for="user_email">Почта</label>
+                                            <input type="email" id="user_email" name="user_email" placeholder="email@mail.com"></input>
+                                        </div>
                                     </div>
-                                    <div class="form__block-link">
-                                        <label>Телефон</label>
-                                        <input name="tel" placeholder="+ _ (___) ___-____">
-                                    </div>
-                                    <div class="form__block-link">
-                                        <label>Почта</label>
-                                        <input type="email" required placeholder="email@mail.com">
-                                    </div>
+                                
+                                    <button type="submit" value="Submit" class="form__button" >Получить документацию <img class="button__img" src="assets/images/icon-pdf.png" alt=""></button>
+                
                                 </form>
-                                <button type="button" class="form__button" >Получить документацию <img src="/assets/images/icon-pdf.png" alt=""></button>
                             </div>
                             <p class="form__p">Я подтверждаю, что ознакомлен и даю согласие на обработку персональных анных на условиях и для целей, определяемых <a href="" class="form__a">Политикой конфиденциальности</a> </p>
                 
@@ -437,12 +447,12 @@
                 <div class="block">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-6 ">
+                            <div class="col-12 col-md-6">
                                 <div class="block__img">
                                     <img src="assets/images/img-3.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="col-6 ">
+                            <div class="col-12 col-md-6">
                                 <div class="statistics__content">
                                     <div class="statistics__title">
                                         Рассчитайте прибыль Вашего
@@ -459,6 +469,7 @@
                                                 <div class="polzunok-2">
                                                     <input type="text" class="range1" name="range1" value="" />
                                                 </div>
+                                                
                                                 <div class="polzunok-scale">
                                                     <div class="polzunok-scale-value">0</div>
                                                     <div class="polzunok-scale-value">30</div>
@@ -470,19 +481,22 @@
                                                     <div class="polzunok__value-one">10</div>
                                                 </div>
                                                 <div class="polzunok-3">
-                                                    <input type="text" class="range2" name="range1" value="" />
+                                                    <input type="text" class="range2" name="range2" value="" />
                                                 </div>
                                                 <div class="polzunok-scale">
                                                     <div class="polzunok-scale-value">0</div>
                                                     <div class="polzunok-scale-value">25</div>
                                                 </div>
                                             </div>
+                                            <div class="polzunok__title">Средняя ежемесячная прибыль:</div>
                                             <div class="polzunok__result">
-                                                <span id="s1">12 989 00 рублей</span> <i class="rub">&#115;</i>
+                                                
+                
+                                                <span id="s1">12 989 00 рублей</span>
                                             </div>
                                         </div>
                                     </div>
-                                    <button type="button" class="form__button" >Получить документацию <img src="/assets/images/icon-pdf.png" alt=""></button>
+                                    <button type="button" class="form__button" >Получить бизнес-план <img src="assets/images/icon-pdf.png" alt=""></button>
                 
                                 </div>
                             </div>
@@ -492,7 +506,7 @@
                 <div class="value-tender">
                     <div class="container">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-12 col-lg-6 ">
                                 <div class="value-tender__info">
                                     <div class="value-tender__title value-tender__title--left">
                                         Об основателе
@@ -508,10 +522,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-12 col-lg-6">
                                 <div class="value-tender__author">
                                     <div class="value-tender__img">
-                                        <img src="/assets/images/author.png" alt="">
+                                        <img src="assets/images/author.png" alt="">
                                     </div>
                                     <div class="value-tender__text">
                                         «Александр Васильевич — энтузиаст научного поиска — обладал даром оригинального мышления, отличался высоким профессионализмом исследователя»
@@ -527,7 +541,7 @@
                 <div class="block block--right">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-6 ">
+                            <div class="col-12 col-md-6 ">
                                 <div class="block__content">
                                     <div class="statistics__title">
                                         
@@ -604,7 +618,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 ">
+                            <div class="col-12 col-md-6 ">
                                 <div class="block__img-new ">
                                     <img src="assets/images/img-4.jpg" alt="">
                                 </div>
@@ -620,34 +634,39 @@
                                 вместе с нами
                         </div>
                         <div class="wedding multiple-items">
-                            <div class="wedding__item"><img src="https://i.etsystatic.com/19578656/d/il/990ba8/2116428006/il_340x270.2116428006_hff6.jpg?version=0" alt=""></div>
-                            <div class="wedding__item"><img src="https://i.etsystatic.com/21547255/d/il/ebadce/2215008151/il_340x270.2215008151_r7yt.jpg?version=0" alt=""></div>
-                            <div class="wedding__item"><img src="https://i.etsystatic.com/15813816/d/il/17dca5/1550094413/il_340x270.1550094413_baf3.jpg?version=0" alt=""></div>
-                            <div class="wedding__item"><img src="https://i.etsystatic.com/13870534/c/1237/983/153/31/il/50a30c/1198776715/il_340x270.1198776715_jjon.jpg" alt=""></div>
-                            <div class="wedding__item"><img src="https://i.etsystatic.com/5962420/d/il/f07b92/1661053031/il_340x270.1661053031_lf9c.jpg?version=0" alt=""></div>
-                            <div class="wedding__item"><img src="https://i.etsystatic.com/20821383/c/1516/1205/97/764/il/6bdeb0/2157270200/il_340x270.2157270200_o898.jpg" alt=""></div>
+                            <div class="wedding__item"><img src="assets/images/slide-1.jpg" alt=""></div>
+                            <div class="wedding__item"><img src="assets/images/slide-2.jpg" alt=""></div>
+                            <div class="wedding__item"><img src="assets/images/slide-3.jpg" alt=""></div>
+                            <div class="wedding__item"><img src="assets/images/slide-1.jpg" alt=""></div>
+                            <div class="wedding__item"><img src="assets/images/slide-2.jpg" alt=""></div>
+                            <div class="wedding__item"><img src="assets/images/slide-3.jpg" alt=""></div>
+                            <div class="wedding__item"><img src="assets/images/slide-1.jpg" alt=""></div>
+                            <div class="wedding__item"><img src="assets/images/slide-2.jpg" alt=""></div>
+                            <div class="wedding__item"><img src="assets/images/slide-3.jpg" alt=""></div>
                           </div>
                         <div class="form">
                             <div class="form__title">
-                                Оставьте заявку на презентацию франшизы и бизнес-план
+                                Получите подробный план по открытию бизнеса
                             </div>
-                            <div class="form__form">
-                                <form action="" class="form__block">
+                            <form id="form3" method="post" action="send.php" class="form__block">
+                                <div class="form__blocks">
                                     <div class="form__block-link">
-                                        <label>Ваше имя</label>
-                                        <input type="text" required placeholder="Введите имя">
+                                        <label for="fname">Имя</label>
+                                        <input type="text" id="fname" name="fname" placeholder="Введите имя"></input>
                                     </div>
                                     <div class="form__block-link">
-                                        <label>Телефон</label>
-                                        <input name="tel" placeholder="+ _ (___) ___-____">
+                                        <label for="phone">Телефон</label>
+                                        <input type="tel" id="phone" name="phone" placeholder="+ _ (___) ___-____">
                                     </div>
                                     <div class="form__block-link">
-                                        <label>Почта</label>
-                                        <input type="email" required placeholder="email@mail.com">
+                                        <label for="user_email">Почта</label>
+                                        <input type="email" id="user_email" name="user_email" placeholder="email@mail.com"></input>
                                     </div>
-                                </form>
-                                <button type="button" class="form__button" >Получить документацию <img src="/assets/images/icon-pdf.png" alt=""></button>
-                            </div>
+                                </div>
+                            
+                                <button type="submit" value="Submit" class="form__button" >Получить подробный план <img class="button__img" src="assets/images/icon-pdf.png" alt=""></button>
+                
+                            </form>
                             <p class="form__p">Я подтверждаю, что ознакомлен и даю согласие на обработку персональных анных на условиях и для целей, определяемых <a href="" class="form__a">Политикой конфиденциальности</a> </p>
                 
                         </div>
@@ -656,12 +675,12 @@
                 <div class="block">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-6 ">
+                            <div class="col-12 col-md-6 ">
                                 <div class="block__img-new">
                                     <img src="assets/images/img-5.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="col-6 ">
+                            <div class="col-12 col-md-6 ">
                                 <div class="block__content">
                                     <div class="statistics__title">
                                         Вы можете работать
@@ -703,107 +722,117 @@
                             Чем выше стоимость тендера — тем больше прибыль
                         </div>
                         <div class="franchise__blocks">
-                            <div class="franchise__block">
-                                <div class="franchise__block--link">
-                                    <div class="link-title">
-                                        Максимальная сумма
-                                        <br>
-                                        закупки тендера (рублей)
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xl-4 col-12">
+                                        <div class="franchise__block">
+                                            <div class="franchise__block--link">
+                                                <div class="link-title">
+                                                    Максимальная сумма
+                                                    <br>
+                                                    закупки тендера (рублей)
+                                                </div>
+                                                <div class="link-number">
+                                                    до 5 000 000
+                                                </div>
+                                            </div>
+                                            <div class="franchise__block--link">
+                                                <div class="link-title">
+                                                    Чистая прибыль от одного выигранного тендера (рублей)
+                                                </div>
+                                                <div class="link-number">
+                                                    до 600 000
+                                                </div>
+                                            </div>
+                                            <div class="franchise__block--link">
+                                                <div class="link-title">
+                                                    Стоимость франшизы (рублей)
+                                                </div>
+                                                <div class="link-number">
+                                                    400 000
+                                                </div>
+                                            </div>
+                                            <div class="franchise__block--link">
+                                                <div class="link-title link-title--bold">
+                                                    Окупаемость 1-2 месяца
+                                                </div>
+                                            </div>
+                                            <button type="button" class="form__button form__button--center" >Получить бизнес-план </button>
+                                        </div>
                                     </div>
-                                    <div class="link-number">
-                                        до 5 000 000
+                                    <div class="col-xl-4 col-12">
+                                        <div class="franchise__block">
+                                            <div class="franchise__block--link">
+                                                <div class="link-title">
+                                                    Максимальная сумма
+                                                    <br>
+                                                    закупки тендера (рублей)
+                                                </div>
+                                                <div class="link-number">
+                                                    до 25 000 000
+                                                </div>
+                                            </div>
+                                            <div class="franchise__block--link">
+                                                <div class="link-title">
+                                                    Чистая прибыль от одного выигранного тендера (рублей)
+                                                </div>
+                                                <div class="link-number">
+                                                    до 3 000 000
+                                                </div>
+                                            </div>
+                                            <div class="franchise__block--link">
+                                                <div class="link-title">
+                                                    Стоимость франшизы (рублей)
+                                                </div>
+                                                <div class="link-number">
+                                                    600 000
+                                                </div>
+                                            </div>
+                                            <div class="franchise__block--link">
+                                                <div class="link-title link-title--bold">
+                                                    Окупаемость 1-2 месяца
+                                                </div>
+                                            </div>
+                                            <button type="button" class="form__button form__button--center" >Получить бизнес-план </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-12">
+                                        <div class="franchise__block">
+                                            <div class="franchise__block--link">
+                                                <div class="link-title">
+                                                    Максимальная сумма
+                                                    <br>
+                                                    закупки тендера (рублей)
+                                                </div>
+                                                <div class="link-number">
+                                                    более 25 млн
+                                                </div>
+                                            </div>
+                                            <div class="franchise__block--link">
+                                                <div class="link-title">
+                                                    Чистая прибыль от одного выигранного тендера (рублей)
+                                                </div>
+                                                <div class="link-number">
+                                                    более 3 000 000
+                                                </div>
+                                            </div>
+                                            <div class="franchise__block--link">
+                                                <div class="link-title">
+                                                    Стоимость франшизы (рублей)
+                                                </div>
+                                                <div class="link-number">
+                                                    800 000
+                                                </div>
+                                            </div>
+                                            <div class="franchise__block--link">
+                                                <div class="link-title link-title--bold">
+                                                    Окупаемость 1-2 месяца
+                                                </div>
+                                            </div>
+                                            <button type="button" class="form__button form__button--center" >Получить бизнес-план </button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="franchise__block--link">
-                                    <div class="link-title">
-                                        Чистая прибыль от одного выигранного тендера (рублей)
-                                    </div>
-                                    <div class="link-number">
-                                        до 600 000
-                                    </div>
-                                </div>
-                                <div class="franchise__block--link">
-                                    <div class="link-title">
-                                        Стоимость франшизы (рублей)
-                                    </div>
-                                    <div class="link-number">
-                                        400 000
-                                    </div>
-                                </div>
-                                <div class="franchise__block--link">
-                                    <div class="link-title link-title--bold">
-                                        Окупаемость 1-2 месяца
-                                    </div>
-                                </div>
-                                <button type="button" class="form__button form__button--center" >Получить бизнес-план </button>
-                            </div>
-                            <div class="franchise__block">
-                                <div class="franchise__block--link">
-                                    <div class="link-title">
-                                        Максимальная сумма
-                                        <br>
-                                        закупки тендера (рублей)
-                                    </div>
-                                    <div class="link-number">
-                                        до 25 000 000
-                                    </div>
-                                </div>
-                                <div class="franchise__block--link">
-                                    <div class="link-title">
-                                        Чистая прибыль от одного выигранного тендера (рублей)
-                                    </div>
-                                    <div class="link-number">
-                                        до 3 000 000
-                                    </div>
-                                </div>
-                                <div class="franchise__block--link">
-                                    <div class="link-title">
-                                        Стоимость франшизы (рублей)
-                                    </div>
-                                    <div class="link-number">
-                                        600 000
-                                    </div>
-                                </div>
-                                <div class="franchise__block--link">
-                                    <div class="link-title link-title--bold">
-                                        Окупаемость 1-2 месяца
-                                    </div>
-                                </div>
-                                <button type="button" class="form__button form__button--center" >Получить бизнес-план </button>
-                            </div>
-                            <div class="franchise__block">
-                                <div class="franchise__block--link">
-                                    <div class="link-title">
-                                        Максимальная сумма
-                                        <br>
-                                        закупки тендера (рублей)
-                                    </div>
-                                    <div class="link-number">
-                                        более 25 млн
-                                    </div>
-                                </div>
-                                <div class="franchise__block--link">
-                                    <div class="link-title">
-                                        Чистая прибыль от одного выигранного тендера (рублей)
-                                    </div>
-                                    <div class="link-number">
-                                        более 3 000 000
-                                    </div>
-                                </div>
-                                <div class="franchise__block--link">
-                                    <div class="link-title">
-                                        Стоимость франшизы (рублей)
-                                    </div>
-                                    <div class="link-number">
-                                        800 000
-                                    </div>
-                                </div>
-                                <div class="franchise__block--link">
-                                    <div class="link-title link-title--bold">
-                                        Окупаемость 1-2 месяца
-                                    </div>
-                                </div>
-                                <button type="button" class="form__button form__button--center" >Получить бизнес-план </button>
                             </div>
                         </div>
                         <div class="franchise__p">
@@ -816,7 +845,7 @@
                 <div class="block block--right">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-6 ">
+                            <div class="col-12 col-md-6 ">
                                 <div class="block__content">
                                     <div class="statistics__title">
                                         Пошагово построим Ваш бизнес
@@ -868,7 +897,13 @@
                                                 <span class="statistics__bold">Обучение 
                                                 </span>
                                                 <span class="statistics__p statistics__p--18">
-                                                    Обучение проходит дистанционно в реальном интерфейсе программы на реальных тендерах. Вы на практике поймете как выбирать находить и выбирать тендеры в которых вы выиграете.
+                                                    Обучение проходит дистанционно в реальном 
+                                                    <br>
+                                                    интерфейсе программы на реальных тендерах.
+                                                    <br>
+                                                    Вы на практике поймете как выбирать находить
+                                                    <br>
+                                                    и выбирать тендеры в которых вы выиграете.
                                                 </span>
                                             </div>
                                         </div>
@@ -892,7 +927,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 ">
+                            <div class="col-12 col-md-6 ">
                                 <div class="block__img-new ">
                                     <img src="assets/images/img-6.jpg" alt="">
                                 </div>
@@ -903,24 +938,28 @@
                 <div class="container">
                     <div class="form">
                         <div class="form__title">
-                            Оставьте заявку на презентацию франшизы и бизнес-план
+                            Получите подробный план по открытию бизнеса
                         </div>
                         <div class="form__form">
-                            <form action="" class="form__block">
-                                <div class="form__block-link">
-                                    <label>Ваше имя</label>
-                                    <input type="text" required placeholder="Введите имя">
+                            <form id="form3" method="post" action="send.php" class="form__block">
+                                <div class="form__blocks">
+                                    <div class="form__block-link">
+                                        <label for="fname">Имя</label>
+                                        <input type="text" id="fname" name="fname" placeholder="Введите имя"></input>
+                                    </div>
+                                    <div class="form__block-link">
+                                        <label for="phone">Телефон</label>
+                                        <input type="tel" id="phone" name="phone" placeholder="+ _ (___) ___-____">
+                                    </div>
+                                    <div class="form__block-link">
+                                        <label for="user_email">Почта</label>
+                                        <input type="email" id="user_email" name="user_email" placeholder="email@mail.com"></input>
+                                    </div>
                                 </div>
-                                <div class="form__block-link">
-                                    <label>Телефон</label>
-                                    <input name="tel" placeholder="+ _ (___) ___-____">
-                                </div>
-                                <div class="form__block-link">
-                                    <label>Почта</label>
-                                    <input type="email" required placeholder="email@mail.com">
-                                </div>
+                            
+                                <button type="submit" value="Submit" class="form__button" >Получить комплект открытия<img class="button__img" src="assets/images/icon-pdf.png" alt=""></button>
+                
                             </form>
-                            <button type="button" class="form__button" >Получить документацию <img src="/assets/images/icon-pdf.png" alt=""></button>
                         </div>
                         <p class="form__p">Я подтверждаю, что ознакомлен и даю согласие на обработку персональных анных на условиях и для целей, определяемых <a href="" class="form__a">Политикой конфиденциальности</a> </p>
                 
@@ -938,14 +977,14 @@
                         </div>
                         <div class="fivestep__blocks">
                             <div class="fivestep__block">
-                                <img src="/assets/images/icon-12.png" alt="">
-                                <img src="/assets/images/icon-13.png" alt="">
-                                <img src="/assets/images/icon-14.png" alt="">
-                                <img src="/assets/images/icon-15.png" alt="">
-                                <img src="/assets/images/icon-16.png" alt="">
+                                <img src="assets/images/icon-12.png" alt="">
+                                <img src="assets/images/icon-13.png" alt="">
+                                <img src="assets/images/icon-14.png" alt="">
+                                <img src="assets/images/icon-15.png" alt="">
+                                <img src="assets/images/icon-16.png" alt="">
                             </div>
                             <div class="fivestep__block fivestep__block--center">
-                                <img src="/assets/images/step.png" alt="">
+                                <img src="assets/images/step.png" alt="">
                             </div>
                             <div class="fivestep__block">
                                 <div class="fivestep__link">
@@ -1001,43 +1040,47 @@
                         </div>
                         <div class="form">
                             <div class="form__title">
-                                Оставьте заявку на презентацию франшизы и бизнес-план
+                                Свяжитесь со специалистом
                             </div>
                             <div class="form__form">
-                                <form action="" class="form__block">
-                                    <div class="form__block-link">
-                                        <label>Ваше имя</label>
-                                        <input type="text" required placeholder="Введите имя">
+                                <form id="form4" method="post" action="send.php" class="form__block">
+                                    <div class="form__blocks">
+                                        <div class="form__block-link">
+                                            <label for="fname">Имя</label>
+                                            <input type="text" id="fname" name="fname" placeholder="Введите имя"></input>
+                                        </div>
+                                        <div class="form__block-link">
+                                            <label for="phone">Телефон</label>
+                                            <input type="tel" id="phone" name="phone" placeholder="+ _ (___) ___-____">
+                                        </div>
+                                        <div class="form__block-link">
+                                            <label for="user_email">Почта</label>
+                                            <input type="email" id="user_email" name="user_email" placeholder="email@mail.com"></input>
+                                        </div>
                                     </div>
-                                    <div class="form__block-link">
-                                        <label>Телефон</label>
-                                        <input name="tel" placeholder="+ _ (___) ___-____">
-                                    </div>
-                                    <div class="form__block-link">
-                                        <label>Почта</label>
-                                        <input type="email" required placeholder="email@mail.com">
-                                    </div>
+                                
+                                    <button type="submit" value="Submit" class="form__button" >Свяжитесь со мной <img class="button__img" src="assets/images/search.png" alt=""></button>
+                    
                                 </form>
-                                <button type="button" class="form__button" >Получить документацию <img src="/assets/images/icon-pdf.png" alt=""></button>
                             </div>
                             <p class="form__p">Я подтверждаю, что ознакомлен и даю согласие на обработку персональных анных на условиях и для целей, определяемых <a href="" class="form__a">Политикой конфиденциальности</a> </p>
                         </div>
                         <div class="footer__footer">
                             <div class="footer__logo">
-                                <a href="/"><img src="/assets/images/logo.png" alt=""></a>
+                                <a href="/"><img src="assets/images/logo.png" alt=""></a>
                                 <span class="footer__text">
                                     © «Русинстрой+», 2021
                                 </span>
                             </div>
                             <div class="footer-social">
                                 <div class="footer-social__link">
-                                    <a href=""><img src="/assets/images/facebook.png" alt=""></a>
+                                    <a href=""><img src="assets/images/facebook.png" alt=""></a>
                                 </div>
                                 <div class="footer-social__link">
-                                    <a href=""><img src="/assets/images/instagram.png" alt=""></a>
+                                    <a href=""><img src="assets/images/instagram.png" alt=""></a>
                                 </div>
                                 <div class="footer-social__link">
-                                    <a href=""><img src="/assets/images/youtube.png" alt=""></a>
+                                    <a href=""><img src="assets/images/youtube.png" alt=""></a>
                                 </div>
                             </div>
                             <div class="footer-contact">
@@ -1058,7 +1101,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
     <script src="assets/js/app.js"></script>
     
 </body>
