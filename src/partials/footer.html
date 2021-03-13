@@ -12,44 +12,41 @@
         </div>
         <div class="form">
             <div class="form__title">
-                Оставьте заявку на презентацию франшизы и бизнес-план
+                Свяжитесь со специалистом
             </div>
             <div class="form__form">
-                <form action="" class="form__block">
-                    <div class="form__block-link">
-                        <label>Ваше имя</label>
-                        <input type="text" required placeholder="Введите имя">
+                <form id="form4" method="post" action="send.php" class="form__block">
+                    <div class="form__blocks">
+                        <input type="hidden" name="project_name" value="Выбор">
+                        <input type="hidden" name="admin_email" value="leads@conversionpro.agency">
+                        <input type="hidden" name="admin_email" value="master-net-bratsk@yandex.ru">
+                        <input type="hidden" name="form_subject" value="Пятая форма">
+                        <div class="form__block-link">
+                            <label for="fname">Имя</label>
+                            <input type="text" id="fname" name="fname" placeholder="Введите имя"></input>
+                        </div>
+                        <div class="form__block-link">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+ _ (___) ___-____">
+                        </div>
+                        <div class="form__block-link">
+                            <label for="user_email">Почта</label>
+                            <input type="email" id="user_email" name="user_email" placeholder="email@mail.com"></input>
+                        </div>
                     </div>
-                    <div class="form__block-link">
-                        <label>Телефон</label>
-                        <input name="tel" placeholder="+ _ (___) ___-____">
-                    </div>
-                    <div class="form__block-link">
-                        <label>Почта</label>
-                        <input type="email" required placeholder="email@mail.com">
-                    </div>
+                
+                    <button type="submit" value="Submit" class="form__button" >Свяжитесь со мной <img class="button__img" src="assets/images/search.png" alt=""></button>
+    
                 </form>
-                <button type="button" class="form__button" >Получить документацию <img src="/assets/images/icon-pdf.png" alt=""></button>
             </div>
             <p class="form__p">Я подтверждаю, что ознакомлен и даю согласие на обработку персональных анных на условиях и для целей, определяемых <a href="" class="form__a">Политикой конфиденциальности</a> </p>
         </div>
         <div class="footer__footer">
             <div class="footer__logo">
-                <a href="/"><img src="/assets/images/logo.png" alt=""></a>
+                <a href="/"><img src="assets/images/logo.png" alt=""></a>
                 <span class="footer__text">
                     © «Русинстрой+», 2021
                 </span>
-            </div>
-            <div class="footer-social">
-                <div class="footer-social__link">
-                    <a href=""><img src="/assets/images/facebook.png" alt=""></a>
-                </div>
-                <div class="footer-social__link">
-                    <a href=""><img src="/assets/images/instagram.png" alt=""></a>
-                </div>
-                <div class="footer-social__link">
-                    <a href=""><img src="/assets/images/youtube.png" alt=""></a>
-                </div>
             </div>
             <div class="footer-contact">
                 <a class="footer-contact__phone" href="tel:+74842228298">+7(4842) 22-82-98</a>

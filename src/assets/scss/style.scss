@@ -1,17 +1,19 @@
 @import "vars";
 @import "vendor/reset";
+@import "mixins";
 @import 'bootstrap/scss/bootstrap';
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body {
     background-color: $white;
     font-size: 1.4rem;
-    line-height: 1.5;
     color: $white;
     font-family:'Roboto Regular';
+    overflow-x: hidden;
 }
 
 *,
@@ -35,3 +37,4 @@ body {
 @import "blocks/slick.scss";
 @import "blocks/slider.scss";
 @import "blocks/slick-theme.scss";
+@import "blocks/ion.rangeSlider.scss";

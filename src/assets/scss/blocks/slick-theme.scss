@@ -13,8 +13,8 @@ $slick-loader-path: "./" !default;
 $slick-arrow-color: white !default;
 $slick-dot-color: black !default;
 $slick-dot-color-active: $slick-dot-color !default;
-$slick-prev-character: url(/assets/images/arrow-left.png) !default;
-$slick-next-character: url(/assets/images/arrow-right.png) !default;
+$slick-prev-character: url(../images/arrow-left.png) !default;
+$slick-next-character: url(../images/arrow-right.png) !default;
 $slick-dot-character: "\2022" !default;
 $slick-dot-size: 6px !default;
 $slick-opacity-default: 0.75 !default;
@@ -87,13 +87,19 @@ $slick-opacity-not-active: 0.25 !default;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
+    @include breakpoint($bp-576) {
+        display: none!important;
+    }
 }
 
 .slick-prev {
-    left: -25px;
+    left: -35px;
     [dir="rtl"] & {
         left: auto;
-        right: -25px;
+        right: -35px;
+        @include breakpoint($bp-768) {
+            left: -15px;
+        }
     }
     &:before {
         content: $slick-prev-character;
@@ -101,19 +107,28 @@ $slick-opacity-not-active: 0.25 !default;
             content: $slick-next-character;
         }
     }
+    @include breakpoint($bp-768) {
+        left: -15px;
+    }
 }
 
 .slick-next {
-    right: -25px;
+    right: -35px;
     [dir="rtl"] & {
-        left: -25px;
+        left: -35px;
         right: auto;
+        @include breakpoint($bp-768) {
+            left: -15px;
+        }
     }
     &:before {
         content: $slick-next-character;
         [dir="rtl"] & {
             content: $slick-prev-character;
         }
+    }
+    @include breakpoint($bp-768) {
+        right: -15px;
     }
 }
 

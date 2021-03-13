@@ -1,29 +1,78 @@
 .value-tender {
-    background: url(/assets/images/bg-1-80.jpg);
+    background: url(../images/bg-1-80.jpg);
 
     background-repeat: no-repeat;  
     background-position: center top;
     margin-bottom: 145px;
+    padding-bottom: 20px;
+    @include breakpoint-min($bp-1921) {
+        background-size: cover;
+    }
+    @include breakpoint($bp-992) {
+        background-size: cover;
+        height: auto;
+    }
+    @include breakpoint($bp-576) {
+        margin-bottom: 50px;
+    }
     &__title {
         padding-top: 60px;
         text-align: center;
         font-family: 'Ubuntu', sans-serif;
         font-size: 30px;
+        line-height: 36px;
         color: $white;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         &--left {
             text-align: left;
-            margin-bottom: 55px;
+            margin-bottom: 46px;
+            @include breakpoint($bp-992) {
+                text-align: center;
+            }
+            @include breakpoint($bp-576) {
+                margin-bottom: 25px;
+            }
+        }
+        @include breakpoint($bp-1200) {
+            font-size: 28px;
+            line-height: 30px;
+        }
+        @include breakpoint($bp-992) {
+            font-size: 26px;
+            line-height: 28px;
+        }
+        @include breakpoint($bp-576) {
+            font-size: 20px;
+            line-height: 25px;
+            padding-top: 30px;
         }
     }
     &__p {
         text-align: center;
         font-family: 'Roboto', sans-serif;
         font-size: 18px;
+        line-height: 24px;
         &--16 {
             font-size: 16px;
             text-align: left;
             margin-bottom: 25px;
+            line-height: 22px;
+            @include breakpoint($bp-1200) {
+                font-size: 15px;
+                line-height: 20px;
+            }
+        }
+        @include breakpoint($bp-1200) {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        @include breakpoint($bp-992) {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        @include breakpoint($bp-576) {
+            font-size: 12px;
+            line-height: 18px;
         }
     }
     &__form {
@@ -33,22 +82,39 @@
         box-shadow: 0px 5px 35px 0px rgba(50, 50, 50, 0.75);
         border-radius: 18px;
         margin-bottom: 20px;
+        @include breakpoint($bp-576) {
+            padding: 15px 15px;
+        }
     }
     &__info {
-        width: 400px;
+        width: 438px;
         padding-bottom: 20px;
+        @include breakpoint($bp-1200) {
+            width: 100%;
+        }
+        @include breakpoint($bp-992) {
+            margin: 0 auto;
+        }
+        @include breakpoint($bp-576) {
+            width: 100%;
+        }
     }
     &__author {
-        padding-top: 60px;
-        width: 220px;
+        padding-top: 90px;
+        width: 305px;
         margin: 0 auto;
+        @include breakpoint($bp-992) {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
     }
     &__img {
         width: 220px;
         height: 220px;
-        background: url(/assets/images/bg-author.png);
+        background: url(../images/bg-author.png);
         position: relative;
-        margin-bottom: 25px;
+        margin: 0 auto 25px;
         img {
             position: absolute;
             top: 10px;
@@ -59,9 +125,16 @@
         font-family: 'Roboto', sans-serif;
         font-size: 16px;
         font-style: italic;
+        line-height: 22px;
         &--right {
+            width: 260px;
             margin-top: 20px;
-            text-align: right;
+            margin-left: auto;
+            margin-bottom: 45px;
+        }
+        @include breakpoint($bp-1200) {
+            font-size: 15px;
+            line-height: 20px;
         }
     }
 }
@@ -77,6 +150,9 @@
         height: 241px;
         width: 1px;
         background: #CBDEE7;
+        @include breakpoint($bp-992) {
+            height: 180px;
+        }
     }
 }
 
@@ -96,6 +172,12 @@
     font-size: 20px;
     text-align: center;
     padding-bottom: 10px;
+    @include breakpoint($bp-992) {
+        font-size: 18px;
+    }
+    @include breakpoint($bp-576) {
+        font-size: 14px;
+    }
 }
 .block-content {
     width: 50%;
@@ -105,5 +187,30 @@
     font-size: 40px;
     text-align: center;
     padding: 3px 0;
+    @include breakpoint($bp-992) {
+        font-size: 30px;
+    }
+    @include breakpoint($bp-576) {
+        font-size: 20px;
+    }
     
+}
+.btn-thender {
+    width: 100%;
+    height: 70px;
+    background: #D98032;
+    border-radius: 8px;
+    color: $white;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 38px;
+    &:hover {
+        background: #f0892f;
+    }
+    &:focus {
+        background: #f0892f;
+    }
 }

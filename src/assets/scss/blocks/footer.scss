@@ -1,8 +1,9 @@
 .footer {
-    background: url(/assets/images/bg-1-80.jpg);
-    background-repeat: no-repeat;  
+    background: url(../images/bg-1-80.jpg) no-repeat;
     background-position: center top;
+    height: auto;
     padding: 55px 0 40px;
+    background-size: cover;
     &__title {
         font-family: 'Ubuntu', sans-serif;
         font-weight: bold;
@@ -10,33 +11,64 @@
         text-align: center;
         margin-bottom: 20px;
         line-height: 48px;
+        @include breakpoint($bp-1200) {
+            font-size: 30px;
+            line-height: 35px;
+        }
+        @include breakpoint($bp-992) {
+            font-size: 25px;
+            line-height: 25px;
+        }
+        @include breakpoint($bp-576) {
+            font-size: 20px;
+            line-height: 25px;
+        }
     }
     &__p {
         font-family: 'Roboto', sans-serif;
         font-size: 22px;
         margin-bottom: 50px;
         text-align: center;
-        line-height: 26px;
+        line-height: 26.4px;
+        @include breakpoint($bp-992) {
+            font-size: 20px;
+            line-height: 20px;
+        }
+        @include breakpoint($bp-576) {
+            font-size: 14px;
+            line-height: 20px;
+        }
     }
     &__footer {
         display: flex;
         justify-content: space-between;
         margin-top: 80px;
+        @include breakpoint($bp-992) {
+            flex-direction: column;
+            justify-content: center;
+        }
     }
     &__logo {
         display: flex;
         flex-direction: column;
+        @include breakpoint($bp-992) {
+            margin: 0 auto;
+        }
     }
     &__text {
         font-family: 'Roboto', sans-serif;
         font-size: 14px;
         margin-top: 20px;
+        line-height: 16.8px;
         &-m0 {
-            margin-top: 5px;
+            margin-top: 10px;
             a {
                 color: $white;
-                text-decoration: none;
+
             }
+        }
+        @include breakpoint($bp-992) {
+            text-align: center;
         }
     }
     &-social {
@@ -46,6 +78,9 @@
             &:last-child {
                 margin-right: 0px;
             }
+        }
+        @include breakpoint($bp-992) {
+            margin: 20px auto;
         }
     }
     &-contact {
@@ -59,6 +94,10 @@
             text-decoration: none;
             line-height: 21px;
             float: right;
+        }
+        @include breakpoint($bp-992) {
+            margin: 20px auto;
+            text-align: center;
         }
     }
     

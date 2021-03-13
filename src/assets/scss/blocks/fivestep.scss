@@ -1,38 +1,140 @@
 .fivestep {
     margin: 135px 0;
+    @include breakpoint($bp-576) {
+        margin: 50px 0;
+    }
     &__title {
         font-family: 'Ubuntu', sans-serif;
         font-weight: bold;
         font-size: 40px;
         text-align: center;
         color: $primary;
+        line-height: 36px;
+        margin-bottom: 21px;
+        @include breakpoint($bp-992) {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        @include breakpoint($bp-576) {
+            font-size: 20px;
+            line-height: 20px;
+            margin-bottom: 10px;
+        }
     }
     &__p {
         font-family: 'Roboto', sans-serif;
         font-size: 18px;
         text-align: center;
         color: $primary;
+        line-height: 21.6px;
+        @include breakpoint($bp-992) {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        @include breakpoint($bp-576) {
+            font-size: 14px;
+            line-height: 20px;
+        }
     }
     &__blocks {
         width: 945px;
         margin: 45px auto;
         display: flex;
         flex-direction: column;
+        position: relative;
+        @include breakpoint($bp-1200) {
+            width: 100%;
+        }
+        @include breakpoint($bp-576) {
+            flex-direction: row;
+            padding: 0 20px;
+            margin: 20px auto;
+        }
     }
     &__block {
         display: flex;
         justify-content: space-between;
         margin-bottom: 20px;
+        img {
+            @include breakpoint($bp-992) {
+                width: 100px;
+                height: auto;
+            }
+        }
+        &--left {
+            img {
+                @include breakpoint($bp-576) {
+                    width: 75px;
+                    margin-bottom: 5px;
+                    
+                }
+            }
+            @include breakpoint($bp-576) {
+                width: 33%;
+                justify-content: center;
+                align-items: flex-end;
+            }
+
+            
+        }
         &--center {
             margin: 0 auto 20px;
+            img {
+                @include breakpoint($bp-1200) {
+                    width: 90%;
+                    margin: 0 auto;
+                }
+                @include breakpoint($bp-992) {
+                    width: 85%;
+                    margin: 0 auto 0;
+                }
+                @include breakpoint($bp-576) {
+                    width: 195px;
+                    height: 15px;
+                    transform: rotate(90deg) scale(2)  ;
+                    margin: auto 0;
+                }
+            }
+            @include breakpoint($bp-576) {
+                margin: 0;
+                padding: 0 0 0 0;
+                width: 33%;
+                align-items: center;
+            }
+            
+        }
+        &--right {
+            @include breakpoint($bp-576) {
+                width: 33%;
+                justify-content: center;
+                align-items: flex-start;
+            }
+            
+        }
+        @include breakpoint($bp-576) {
+            flex-direction: column;
         }
     }
     &__link {
+        width: 115px;
         font-family: 'Ubuntu', sans-serif;
         font-weight: 500;
         font-size: 20px;
         color: $primary;
         text-align: center;
         line-height: 24px;
+        @include breakpoint($bp-992) {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        @include breakpoint($bp-576) {
+            font-size: 11px;
+            margin-bottom: 40px;
+            text-align: left;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+
     }
 }
