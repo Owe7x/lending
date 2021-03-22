@@ -37,6 +37,9 @@
             font-size: 22px;
             text-align: center;
         }
+        @include breakpoint($bp-992) {
+            line-height: 28px;
+        }
         @include breakpoint($bp-576) {
             font-size: 16px;
             line-height: 20px;

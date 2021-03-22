@@ -156,7 +156,7 @@
         font-size: 22px;
         text-align: center;
         padding-right: 0;
-        line-height: 30px;
+        line-height: 25px;
     }
     
 }
@@ -270,6 +270,9 @@
         width: 53px;
         height: 9px;
         background: url(../images/icon-dots.png);
+        @include breakpoint($bp-992) {
+            right: -26px;
+        }
         @include breakpoint($bp-576) {
             display: none;
         }

@@ -42,7 +42,7 @@
     }
     &__content {
         width: 420px;
-        margin: 215px auto 0;
+        margin: 100px auto 0;
         @include breakpoint($bp-992) {
             width: 400px;
             margin: 0 auto 0;
@@ -52,6 +52,19 @@
         }
         @include breakpoint($bp-576) {
             width: 290px;
+        }
+        &--center {
+            margin-top: 215px;
+            @include breakpoint($bp-992) {
+                width: 400px;
+                margin: 100px auto 0;
+            }
+            @include breakpoint($bp-768) {
+                text-align: center;
+            }
+            @include breakpoint($bp-576) {
+                width: 290px;
+            }
         }
     }
     &__title {
@@ -233,4 +246,11 @@
             }
         }
     }
+}
+
+.stats-top-text {
+    width: 50%;
+}
+.stats-top-number {
+    width: 50%;
 }

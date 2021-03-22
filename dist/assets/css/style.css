@@ -986,8 +986,8 @@ progress {
 .container-xl,
 .container-xxl {
     width: 100%;
-    padding-right: var(--bs-gutter-x, 0.75rem);
-    padding-left: var(--bs-gutter-x, 0.75rem);
+    padding-right: var(--bs-gutter-x, 1rem);
+    padding-left: var(--bs-gutter-x, 1rem);
     margin-right: auto;
     margin-left: auto;
 }
@@ -1023,7 +1023,7 @@ progress {
 }
 
 .row {
-    --bs-gutter-x: 1.5rem;
+    --bs-gutter-x: 2rem;
     --bs-gutter-y: 0;
     display: -ms-flexbox;
     display: flex;
@@ -5332,7 +5332,7 @@ textarea.form-control-lg {
 }
 
 .card-group > .card {
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
 }
 
 @media (min-width: 576px) {
@@ -6283,7 +6283,7 @@ textarea.form-control-lg {
 }
 
 .toast-container > :not(:last-child) {
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
 }
 
 .toast-header {
@@ -12531,7 +12531,7 @@ body {
         font-size: 22px;
         text-align: center;
         padding-right: 0;
-        line-height: 30px;
+        line-height: 25px;
     }
 }
 
@@ -12702,6 +12702,12 @@ body {
     background: url(../images/icon-dots.png);
 }
 
+@media screen and (max-width: 992px) {
+    .block-icon::after {
+        right: -26px;
+    }
+}
+
 @media screen and (max-width: 576px) {
     .block-icon::after {
         display: none;
@@ -12812,6 +12818,12 @@ body {
     .form__title {
         font-size: 22px;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .form__title {
+        line-height: 28px;
     }
 }
 
@@ -13750,6 +13762,7 @@ body {
 @media screen and (max-width: 576px) {
     .value-tender__info {
         width: 100%;
+        padding: 0 5px;
     }
 }
 
@@ -13811,15 +13824,9 @@ body {
     left: 50%;
     display: block;
     content: '';
-    height: 241px;
+    height: 100%;
     width: 1px;
     background: #CBDEE7;
-}
-
-@media screen and (max-width: 992px) {
-    .form-tender__blocks::after {
-        height: 180px;
-    }
 }
 
 .form-tender__block {
@@ -13845,6 +13852,7 @@ body {
 @media screen and (max-width: 992px) {
     .block-header {
         font-size: 18px;
+        line-height: 22px;
     }
 }
 
@@ -13877,7 +13885,7 @@ body {
 }
 
 .btn-thender {
-    width: 100%;
+    width: 98%;
     height: 70px;
     background: #D98032;
     border-radius: 8px;
@@ -14424,7 +14432,7 @@ body {
 @media screen and (max-width: 992px) {
     .fivestep__link {
         font-size: 16px;
-        line-height: 22px;
+        line-height: 20px;
     }
 }
 
