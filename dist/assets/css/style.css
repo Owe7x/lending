@@ -12297,6 +12297,10 @@ body {
     box-sizing: border-box;
 }
 
+a:hover {
+    color: darkgray;
+}
+
 /* Blocks */
 .header {
     position: relative;
@@ -13211,7 +13215,7 @@ body {
 
 .statistics__content {
     width: 420px;
-    margin: 215px auto 0;
+    margin: 100px auto 0;
 }
 
 @media screen and (max-width: 992px) {
@@ -13229,6 +13233,29 @@ body {
 
 @media screen and (max-width: 576px) {
     .statistics__content {
+        width: 290px;
+    }
+}
+
+.statistics__content--center {
+    margin-top: 215px;
+}
+
+@media screen and (max-width: 992px) {
+    .statistics__content--center {
+        width: 400px;
+        margin: 100px auto 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .statistics__content--center {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .statistics__content--center {
         width: 290px;
     }
 }
@@ -13476,6 +13503,14 @@ body {
     .stats__link-info--line::after {
         left: 0px;
     }
+}
+
+.stats-top-text {
+    width: 50%;
+}
+
+.stats-top-number {
+    width: 50%;
 }
 
 .sector {

@@ -21,7 +21,11 @@ body {
 *:after {
     box-sizing: border-box;
 }
-
+a {
+    &:hover {
+        color: darkgray
+    }
+}
 
 /* Blocks */
 @import "blocks/header.scss";
