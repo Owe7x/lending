@@ -104,31 +104,31 @@
                             Оставьте заявку на презентацию франшизы и бизнес-план
                         </div>
                         <div class="form__form">
-                            <form id="form1" method="post" action="send.php" class="form__block">
+                            <form action="mail.php" method="POST" class="form__block" id="form1">
                                 <div class="form__blocks">
                                     <!-- Hidden Required Fields -->
-                                    <input type="hidden" name="project_name" value="Выбор">
-                                    <input type="hidden" name="admin_email" value="leads@conversionpro.agency">
-                                    <input type="hidden" name="admin_email" value="master-net-bratsk@yandex.ru">
-                                    <input type="hidden" name="form_subject" value="Первая Форма">
+                                    <input type="hidden" name="admin_email[]" value="master-net-bratsk@yandex.ru">
+                                    <input type="hidden" name="admin_email[]" value="leads@conversionpro.agency">
+        		                    <input type="hidden" name="form_subject" value="Клиент с сайта ООО Выбор">
                                     <div class="form__block-link">
-                                        <label for="fname">Ваше имя</label>
-                                        <input type="text" id="fname" name="fname" placeholder="Введите имя"></input>
+                                        <label for="name">Ваше имя</label>
+                                        <input type="text" data-validate-field="name" name="name" placeholder="Введите имя"></input>
                                         
                                     </div>
                                     <div class="form__block-link">
-                                        <label for="phone">Телефон</label>
-                                        <input type="tel" id="phone" name="phone" placeholder="+ _ (___) ___-____">
+                                        <label for="tel">Телефон</label>
+                                        <input type="tel" data-validate-field="tel" name="tel" placeholder="+ _ (___) ___-____">
                                     </div>
                                     <div class="form__block-link">
-                                        <label for="user_email">Почта</label>
-                                        <input type="email" id="user_email" name="user_email" placeholder="email@mail.com"></input>
+                                        <label for="email">Почта</label>
+                                        <input type="email" data-validate-field="email" name="email" placeholder="email@mail.com"></input>
                                     </div>
                                 </div>
                             
                                 <button type="submit" value="Submit" class="form__button" >Получить документацию <img class="button__img" src="assets/images/icon-pdf.png" alt=""></button>
         
                             </form>
+                            
                         </div>
                         <p class="form__p">Я подтверждаю, что ознакомлен и даю согласие на обработку персональных анных на условиях и для целей, определяемых <a href="" class="form__a">Политикой конфиденциальности</a> </p>
                     </div>
@@ -143,23 +143,22 @@
                         Оставьте заявку на презентацию франшизы и бизнес-план
                     </div>
                     <div class="form__form form__form--modal">
-                        <form id="form6" method="post" action="send.php" class="form__block form__block--modal">
+                        <form method="post" action="send.php"  class="form__block form__block--modal" id="form2">
                             <div class="form__blocks form__blocks--modal">
-                                <input type="hidden" name="project_name" value="Выбор">
-                                    <input type="hidden" name="admin_email" value="leads@conversionpro.agency">
-                                    <input type="hidden" name="admin_email" value="master-net-bratsk@yandex.ru">
-                                    <input type="hidden" name="form_subject" value="Модальная форма">
+                                <input type="hidden" name="admin_email[]" value="master-net-bratsk@yandex.ru">
+                                <input type="hidden" name="admin_email[]" value="leads@conversionpro.agency">
+                                <input type="hidden" name="form_subject" value="Клиент с сайта ООО Выбор">
                                 <div class="form__block-link form__block-link--modal">
-                                    <label for="fname">Ваше имя</label>
-                                    <input type="text" id="fname" name="fname" placeholder="Введите имя"></input>
+                                    <label for="name">Ваше имя</label>
+                                    <input type="text" data-validate-field="name" name="name" placeholder="Введите имя"></input>
                                 </div>
                                 <div class="form__block-link form__block-link--modal">
-                                    <label for="phone">Телефон</label>
-                                    <input type="tel" id="phone" name="phone" placeholder="+ _ (___) ___-____">
+                                    <label for="tel">Телефон</label>
+                                    <input type="tel" data-validate-field="tel" name="tel" placeholder="+ _ (___) ___-____">
                                 </div>
                                 <div class="form__block-link form__block-link--modal">
-                                    <label for="user_email">Почта</label>
-                                    <input type="email" id="user_email" name="user_email" placeholder="email@mail.com"></input>
+                                    <label for="email">Почта</label>
+                                    <input type="email" data-validate-field="email" name="email" placeholder="email@mail.com"></input>
                                 </div>
                             </div>
                         
@@ -471,28 +470,29 @@
                                 Оставьте заявку на презентацию франшизы и бизнес-план
                             </div>
                             <div class="form__form">
-                                <form id="form2" method="post" action="send.php" class="form__block">
+                                <form action="mail.php" method="POST" class="form__block" id="form3">
                                     <div class="form__blocks">
-                                            <input type="hidden" name="project_name" value="Выбор">
-                                            <input type="hidden" name="admin_email" value="leads@conversionpro.agency">
-                                            <input type="hidden" name="admin_email" value="master-net-bratsk@yandex.ru">
-                                            <input type="hidden" name="form_subject" value="Вторая форма">
+                                        <!-- Hidden Required Fields -->
+                                        <input type="hidden" name="admin_email[]" value="master-net-bratsk@yandex.ru">
+                                        <input type="hidden" name="admin_email[]" value="leads@conversionpro.agency">
+                                        <input type="hidden" name="form_subject" value="Клиент с сайта ООО Выбор">
                                         <div class="form__block-link">
-                                            <label for="fname">Ваше имя</label>
-                                            <input type="text" id="fname" name="fname" placeholder="Введите имя"></input>
+                                            <label for="name">Ваше имя</label>
+                                            <input type="text" data-validate-field="name" name="name" placeholder="Введите имя"></input>
+                                            
                                         </div>
                                         <div class="form__block-link">
-                                            <label for="phone">Телефон</label>
-                                            <input type="tel" id="phone" name="phone" placeholder="+ _ (___) ___-____">
+                                            <label for="tel">Телефон</label>
+                                            <input type="tel" data-validate-field="tel" name="tel" placeholder="+ _ (___) ___-____">
                                         </div>
                                         <div class="form__block-link">
-                                            <label for="user_email">Почта</label>
-                                            <input type="email" id="user_email" name="user_email" placeholder="email@mail.com"></input>
+                                            <label for="email">Почта</label>
+                                            <input type="email" data-validate-field="email" name="email" placeholder="email@mail.com"></input>
                                         </div>
                                     </div>
                                 
                                     <button type="submit" value="Submit" class="form__button" >Получить документацию <img class="button__img" src="assets/images/icon-pdf.png" alt=""></button>
-                                    
+                
                                 </form>
                             </div>
                             <p class="form__p">Я подтверждаю, что ознакомлен и даю согласие на обработку персональных анных на условиях и для целей, определяемых <a href="" class="form__a">Политикой конфиденциальности</a> </p>
@@ -690,41 +690,39 @@
                                 вместе с нами
                         </div>
                         <div class="wedding multiple-items">
-                            <div class="wedding__item"><img src="assets/images/slide-1.jpg" alt=""></div>
-                            <div class="wedding__item"><img src="assets/images/slide-2.jpg" alt=""></div>
-                            <div class="wedding__item"><img src="assets/images/slide-3.jpg" alt=""></div>
-                            <div class="wedding__item"><img src="assets/images/slide-1.jpg" alt=""></div>
-                            <div class="wedding__item"><img src="assets/images/slide-2.jpg" alt=""></div>
-                            <div class="wedding__item"><img src="assets/images/slide-3.jpg" alt=""></div>
-                            <div class="wedding__item"><img src="assets/images/slide-1.jpg" alt=""></div>
-                            <div class="wedding__item"><img src="assets/images/slide-2.jpg" alt=""></div>
-                            <div class="wedding__item"><img src="assets/images/slide-3.jpg" alt=""></div>
+                            <div class="wedding__item"><img src="assets/images/slide-1.png" alt=""></div>
+                            <div class="wedding__item"><img src="assets/images/slide-2.png" alt=""></div>
+                            <div class="wedding__item"><img src="assets/images/slide-3.png" alt=""></div>
+                            <div class="wedding__item"><img src="assets/images/slide-1.png" alt=""></div>
+                            <div class="wedding__item"><img src="assets/images/slide-2.png" alt=""></div>
+                            <div class="wedding__item"><img src="assets/images/slide-3.png" alt=""></div>
                           </div>
                         <div class="form">
                             <div class="form__title">
                                 Получите подробный план по открытию бизнеса
                             </div>
-                            <form id="form3" method="post" action="send.php" class="form__block">
+                            <form action="mail.php" method="POST" class="form__block" id="form4">
                                 <div class="form__blocks">
-                                    <input type="hidden" name="project_name" value="Выбор">
-                                    <input type="hidden" name="admin_email" value="leads@conversionpro.agency">
-                                    <input type="hidden" name="admin_email" value="master-net-bratsk@yandex.ru">
-                                    <input type="hidden" name="form_subject" value="Третья форма">
+                                    <!-- Hidden Required Fields -->
+                                    <input type="hidden" name="admin_email[]" value="master-net-bratsk@yandex.ru">
+                                    <input type="hidden" name="admin_email[]" value="leads@conversionpro.agency">
+                                    <input type="hidden" name="form_subject" value="Клиент с сайта ООО Выбор">
                                     <div class="form__block-link">
-                                        <label for="fname">Имя</label>
-                                        <input type="text" id="fname" name="fname" placeholder="Введите имя"></input>
+                                        <label for="name">Ваше имя</label>
+                                        <input type="text" data-validate-field="name" name="name" placeholder="Введите имя"></input>
+                                        
                                     </div>
                                     <div class="form__block-link">
-                                        <label for="phone">Телефон</label>
-                                        <input type="tel" id="phone" name="phone" placeholder="+ _ (___) ___-____">
+                                        <label for="tel">Телефон</label>
+                                        <input type="tel" data-validate-field="tel" name="tel" placeholder="+ _ (___) ___-____">
                                     </div>
                                     <div class="form__block-link">
-                                        <label for="user_email">Почта</label>
-                                        <input type="email" id="user_email" name="user_email" placeholder="email@mail.com"></input>
+                                        <label for="email">Почта</label>
+                                        <input type="email" data-validate-field="email" name="email" placeholder="email@mail.com"></input>
                                     </div>
                                 </div>
                             
-                                <button type="submit" value="Submit" class="form__button" >Получить подробный план <img class="button__img" src="assets/images/icon-pdf.png" alt=""></button>
+                                <button type="submit" value="Submit" class="form__button" >Получить документацию <img class="button__img" src="assets/images/icon-pdf.png" alt=""></button>
                 
                             </form>
                             <p class="form__p">Я подтверждаю, что ознакомлен и даю согласие на обработку персональных анных на условиях и для целей, определяемых <a href="" class="form__a">Политикой конфиденциальности</a> </p>
@@ -990,27 +988,28 @@
                             Получите подробный план по открытию бизнеса
                         </div>
                         <div class="form__form">
-                            <form id="form3" method="post" action="send.php" class="form__block">
+                            <form action="mail.php" method="POST" class="form__block" id="form5">
                                 <div class="form__blocks">
-                                    <input type="hidden" name="project_name" value="Выбор">
-                                    <input type="hidden" name="admin_email" value="leads@conversionpro.agency">
-                                    <input type="hidden" name="admin_email" value="master-net-bratsk@yandex.ru">
-                                    <input type="hidden" name="form_subject" value="Четвертая форма">
+                                    <!-- Hidden Required Fields -->
+                                    <input type="hidden" name="admin_email[]" value="master-net-bratsk@yandex.ru">
+                                    <input type="hidden" name="admin_email[]" value="leads@conversionpro.agency">
+                                    <input type="hidden" name="form_subject" value="Клиент с сайта ООО Выбор">
                                     <div class="form__block-link">
-                                        <label for="fname">Имя</label>
-                                        <input type="text" id="fname" name="fname" placeholder="Введите имя"></input>
+                                        <label for="name">Ваше имя</label>
+                                        <input type="text" data-validate-field="name" name="name" placeholder="Введите имя"></input>
+                                        
                                     </div>
                                     <div class="form__block-link">
-                                        <label for="phone">Телефон</label>
-                                        <input type="tel" id="phone" name="phone" placeholder="+ _ (___) ___-____">
+                                        <label for="tel">Телефон</label>
+                                        <input type="tel" data-validate-field="tel" name="tel" placeholder="+ _ (___) ___-____">
                                     </div>
                                     <div class="form__block-link">
-                                        <label for="user_email">Почта</label>
-                                        <input type="email" id="user_email" name="user_email" placeholder="email@mail.com"></input>
+                                        <label for="email">Почта</label>
+                                        <input type="email" data-validate-field="email" name="email" placeholder="email@mail.com"></input>
                                     </div>
                                 </div>
                             
-                                <button type="submit" value="Submit" class="form__button" >Получить комплект открытия<img class="button__img" src="assets/images/icon-pdf.png" alt=""></button>
+                                <button type="submit" value="Submit" class="form__button" >Получить документацию <img class="button__img" src="assets/images/icon-pdf.png" alt=""></button>
                 
                             </form>
                         </div>
@@ -1089,28 +1088,29 @@
                                 Свяжитесь со специалистом
                             </div>
                             <div class="form__form">
-                                <form id="form4" method="post" action="send.php" class="form__block">
+                                <form action="mail.php" method="POST" class="form__block" id="form6">
                                     <div class="form__blocks">
-                                        <input type="hidden" name="project_name" value="Выбор">
-                                        <input type="hidden" name="admin_email" value="leads@conversionpro.agency">
-                                        <input type="hidden" name="admin_email" value="master-net-bratsk@yandex.ru">
-                                        <input type="hidden" name="form_subject" value="Пятая форма">
+                                        <!-- Hidden Required Fields -->
+                                        <input type="hidden" name="admin_email[]" value="master-net-bratsk@yandex.ru">
+                                        <input type="hidden" name="admin_email[]" value="leads@conversionpro.agency">
+                                        <input type="hidden" name="form_subject" value="Клиент с сайта ООО Выбор">
                                         <div class="form__block-link">
-                                            <label for="fname">Имя</label>
-                                            <input type="text" id="fname" name="fname" placeholder="Введите имя"></input>
+                                            <label for="name">Ваше имя</label>
+                                            <input type="text" data-validate-field="name" name="name" placeholder="Введите имя"></input>
+                                            
                                         </div>
                                         <div class="form__block-link">
-                                            <label for="phone">Телефон</label>
-                                            <input type="tel" id="phone" name="phone" placeholder="+ _ (___) ___-____">
+                                            <label for="tel">Телефон</label>
+                                            <input type="tel" data-validate-field="tel" name="tel" placeholder="+ _ (___) ___-____">
                                         </div>
                                         <div class="form__block-link">
-                                            <label for="user_email">Почта</label>
-                                            <input type="email" id="user_email" name="user_email" placeholder="email@mail.com"></input>
+                                            <label for="email">Почта</label>
+                                            <input type="email" data-validate-field="email" name="email" placeholder="email@mail.com"></input>
                                         </div>
                                     </div>
                                 
-                                    <button type="submit" value="Submit" class="form__button" >Свяжитесь со мной <img class="button__img" src="assets/images/search.png" alt=""></button>
-                    
+                                    <button type="submit" value="Submit" class="form__button" >Получить документацию <img class="button__img" src="assets/images/icon-pdf.png" alt=""></button>
+                
                                 </form>
                             </div>
                             <p class="form__p">Я подтверждаю, что ознакомлен и даю согласие на обработку персональных анных на условиях и для целей, определяемых <a href="" class="form__a">Политикой конфиденциальности</a> </p>
@@ -1138,9 +1138,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
     <script src="assets/js/app.js"></script>
     
 </body>
